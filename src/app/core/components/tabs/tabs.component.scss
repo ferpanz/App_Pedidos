@@ -1,0 +1,27 @@
+@use "./../../../../assets/styles/variables.scss";
+
+#container{
+  display: flex;
+  justify-content: space-around;
+  background-color: #e5e5e5;
+  border-radius: variables.$border-radius-mediano variables.$border-radius-mediano 0 0;
+  overflow: hidden;
+  height: 80px;
+}
+
+.tab{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg{
+    display: block;
+    margin: auto;
+    transition: 200ms ease-in-out;
+  }
+  transition: 200ms ease-in-out;
+}
+
+.seleccionado{
+  background-color: variables.$color-principal;
+}

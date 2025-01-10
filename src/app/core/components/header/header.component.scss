@@ -1,0 +1,79 @@
+@use "./../../../../assets/styles/variables.scss";
+
+header{
+  position: relative;
+  height: 80px;
+  background-image: url("./../../../../assets/img/principal/fondoHeader.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 variables.$border-radius-mediano variables.$border-radius-mediano;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 500ms ease-in-out;
+}
+
+header::before{
+  position: absolute;
+  content: "";
+  background-image: url("./../../../../assets/img/principal/fondoHeader.png");
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: 500ms;
+  border-radius: 0 0 variables.$border-radius-mediano variables.$border-radius-mediano;
+}
+
+header.extendido::before{
+  opacity: 0.5;
+}
+
+h1{
+  font-size: xx-large;
+  font-weight: 800;
+  text-align: center;
+}
+
+.logo__img{
+  text-align: center;
+  height: 130px;
+  width: auto;
+}
+
+.back__img{
+  text-align: center;
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.extendido{
+  height: 150px;
+  background-color: unset;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.fade-in{
+  animation: fade-out 450ms ease-in;
+  animation-direction: reverse;
+}
+
+.fade-out{
+  animation: fade-out 150ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fade-out {
+  100%{
+    opacity: 0%;
+  }
+}

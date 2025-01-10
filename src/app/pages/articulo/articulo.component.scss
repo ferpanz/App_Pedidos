@@ -1,0 +1,64 @@
+@use "./../../../assets/styles/variables.scss";
+
+#fotoProducto{
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.margen-chico{
+  margin-top: 230px;
+}
+
+.margen-chico > * {
+  margin-bottom: 10px;
+}
+
+ul li {
+  display: inline;
+  &:not(:last-of-type)::after{
+    content: ", ";
+  }
+}
+
+.apto-container{
+  display: flex;
+  height: 30px;
+  align-items: center;
+  gap: 10px;
+  img{
+    height: 30px;
+  }
+}
+
+textarea{
+  display: block;
+  border-radius: variables.$border-radius-chico;
+  border: unset;
+  background-color: variables.$color-principal-claro;
+  margin-top: 10px;
+  resize:vertical;
+  width: calc(100% - 30px);
+  padding: 15px;
+  &:focus{
+    outline: none;
+  }
+}
+
+#cantidad-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button{
+  width: 100%;
+  border-radius: variables.$border-radius-chico;
+  border: unset;
+  background-color: variables.$color-principal-claro;
+  font-size: larger;
+  padding: 10px;
+}

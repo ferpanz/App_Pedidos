@@ -1,0 +1,147 @@
+@use "./../../../assets/styles/variables.scss";
+
+h2{
+  margin-top: 50px;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#tarjetas-container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: variables.$border-radius-chico;
+  overflow: hidden;
+}
+
+.tarjeta-producto-container{
+  position: relative;
+  display: flex;
+  height: 100px;
+  background-color: variables.$color-principal-claro;
+  > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
+
+#izq{
+  width: 35%;
+  background-color: bisque;
+  background-size: cover;
+  background-position: center;
+  border-radius: variables.$border-radius-chico;
+  > div{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    img{
+      height: 20px;
+      background-color: variables.$color-sello-comida;
+      border-radius: 50%;
+    }
+  }
+}
+
+#centro{
+  width: 55%;
+}
+
+#der{
+  width: 10%;
+  align-items: flex-end;
+}
+
+#borrar{
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  padding: 0;
+}
+
+#mas{
+  height: 38px;
+  font-size: xx-large;
+  text-decoration: none;
+  color: black;
+  background-color: variables.$color-principal-claro;
+  padding: 15px 30px;
+  border-radius: variables.$border-radius-chico;
+}
+
+#informacion{
+  font-size: larger;
+}
+
+#envios-container{
+  background-color: variables.$color-principal-claro;
+  border-radius: variables.$border-radius-chico;
+  padding: 10px;
+  margin: 10px 0;
+  align-items: center;
+  h4{
+    font-size: larger;
+  }
+}
+
+#montos{
+  text-align: end;
+}
+
+#totales > div {
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+#enviar{
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  font-size: larger;
+  background-color: variables.$color-principal;
+  border: unset;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: variables.$border-radius-chico;
+  font-weight: bold;
+}
+
+#boton-editar-direccion{
+  padding-right: 5px;
+}
+
+dialog{
+  background-color: variables.$color-principal-claro;
+  border-radius: variables.$border-radius-chico;
+  border: unset;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.156);
+  div{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  button{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    &:first-of-type{
+      background-color: rgb(211, 255, 211);
+    }
+    &:last-of-type{
+      background-color: rgb(255, 211, 211);
+    }
+    span:first-child{
+      font-size: x-large;
+    }
+  }
+  p{
+    font-size: x-large;
+    text-align: center;
+  }
+}
+
+

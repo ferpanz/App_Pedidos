@@ -1,0 +1,49 @@
+@use "./../../../assets/styles/variables.scss";
+
+*{
+  font-size: large;
+}
+
+form, form div{
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  gap: 20px;
+  div{
+    gap: 5px;
+    margin: 10px 40px;
+  }
+}
+
+label{
+  color: variables.$color-texto-claro;
+}
+
+input{
+  border:none;
+  border-bottom: 2px solid rgb(178, 178, 178);
+  padding-bottom: 10px;
+  padding-top: 5px;
+  &:focus{
+    outline: none;
+  }
+}
+
+
+button{
+  height: 40px;
+  font-weight: bold;
+  background-color: variables.$color-principal-claro;
+  border: none;
+  border-radius: variables.$border-radius-chico;
+  cursor: pointer;
+  &:disabled{
+    background-color: rgb(217, 217, 217);
+  }
+}
+
+.error{
+  color: red;
+}
