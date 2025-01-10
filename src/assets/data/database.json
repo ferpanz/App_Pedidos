@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Pizzas",
-    "fotoUrl": "https://www.laespanolaaceites.com/wp-content/uploads/2019/06/pizza-con-chorizo-jamon-y-queso-1080x671.jpg",
+    "fotoUrl": "assets/img/portada.jpg",
     "productos": [
       {
         "id": "7",
@@ -11,7 +11,7 @@
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": ["Muzarella","Aceitunas","Orégano"],
-        "fotoUrl": "https://caserissimo.com/wp-content/uploads/2015/08/pizabuaur1-1024x768.jpg"
+        "fotoUrl": "assets/img/pizzas/pizzamozzarella.png"
       },
       {
         "id": "8",
@@ -20,7 +20,7 @@
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": ["Muzarella","Aceitunas","Morrones","Tomate","Huevo"],
-        "fotoUrl": "https://images-gmi-pmc.edge-generalmills.com/fce31bdd-1931-4f30-adef-a5bac0864676.jpg"
+        "fotoUrl": "assets/img/pizzas/pizzaalapiedra.png"
       },
       {
         "id": "9",
@@ -29,7 +29,7 @@
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": ["Muzarella","Roquefort","Provolone","Parmesano"],
-        "fotoUrl": "https://www.gourmet.cl/wp-content/uploads/2017/04/pizza-570x458.jpg"
+        "fotoUrl": "assets/img/pizzas/pizza4quesos.png"
       }
     ]
   },
