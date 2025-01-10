@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   categorias:WritableSignal<Categoria[]> = signal([]);
 
   ngOnInit(): void {
-    this.headerService.titulo.set("Inicio");
+    this.headerService.titulo.set(" ");
     this.headerService.extendido.set(true);
     this.categoriasService.getAll().then(res => this.categorias.set(res))
   }

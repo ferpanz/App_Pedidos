@@ -9,7 +9,7 @@ header{
   border-radius: 0 0 variables.$border-radius-mediano variables.$border-radius-mediano;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   transition: 500ms ease-in-out;
 }
 
@@ -43,13 +43,6 @@ h1{
   text-align: center;
   height: 130px;
   width: auto;
-}
-
-.back__img{
-  text-align: center;
-  height: 50px;
-  width: auto;
-  margin-left: 10px;
 }
 
 .extendido{
