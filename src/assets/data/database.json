@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Pizzas",
-    "fotoUrl": "assets/img/portada.jpg",
+    "fotoUrl": "assets/img/pizzas/pizzaalapiedra.png",
     "productos": [
       {
         "id": "7",
@@ -45,7 +45,7 @@
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": ["Carne de ternera","Pan Brioche","Queso"],
-        "fotoUrl": "https://quem.com.ar/tienda/wp-content/uploads/2020/12/Grandwich_17-10_-061.jpg"
+        "fotoUrl": "assets/img/hamburguesas/hamburgesa_doble.png"
       },
       {
         "id": "2",
@@ -54,7 +54,7 @@
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": ["Carne de ternera","Pan Brioche","Queso", "Tomate", "Lechuga"],
-        "fotoUrl": "https://elsheriffburger.com/uploads/lh90_elsheriffbuger/products/54/es/img-H.-Especial-5-WEB-de-taman%CC%83o-mediano.jpg"
+        "fotoUrl": "assets/img/hamburguesas/hamburgesa_bacon.png"
       },
       {
         "id": "3",
@@ -63,7 +63,7 @@
         "esVegano":true,
         "esCeliaco":false,
         "ingredientes": ["Medallón a base de lentejas","Pan Brioche","Tomate"],
-        "fotoUrl": "https://www.pequerecetas.com/wp-content/uploads/2009/04/hamburguesa-de-garbanzos-casera-receta.jpg"
+        "fotoUrl": "assets/img/hamburguesas/hamburgesa_simple.png"
       },
       {
         "id": "4",
@@ -72,7 +72,7 @@
         "esVegano":false,
         "esCeliaco":true,
         "ingredientes": ["Carne de ternera","Pan libre de tacc","Queso"],
-        "fotoUrl": "https://www.perez-h.com/newsite/wp-content/uploads/2016/06/queso-2.jpg"
+        "fotoUrl": "assets/img/hamburguesas/hamburgesa_doble.png"
       },
       {
         "id": "5",
@@ -81,7 +81,7 @@
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": ["Carne de ternera","Pan Brioche","Queso","Salsa secreta BBQ", "Panceta"],
-        "fotoUrl": "https://www.clarin.com/img/2022/05/27/0HXb0UR0v_2000x1500__1.jpg"
+        "fotoUrl": "assets/img/hamburguesas/hamburgesa_bacon.png"
       },
       {
         "id": "6",
@@ -90,7 +90,7 @@
         "esVegano":true,
         "esCeliaco":true,
         "ingredientes": ["Medallón a base de lentejas","Tomate","Lechuga"],
-        "fotoUrl": "https://canalcocina.es/medias/images/1010_Coc_RecetasDeAnnie_HamburguesaQueso.jpg"
+        "fotoUrl": "assets/img/hamburguesas/hamburgesa_simple.png"
       }
     ]
   },
@@ -135,80 +135,98 @@
     "productos": [
       {
         "id": "13",
-        "nombre":"Agua",
+        "nombre":"Coca Cola",
         "precio": 100,
         "esVegano":true,
         "esCeliaco":true,
         "ingredientes": [],
-        "fotoUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3040004_f.jpg"
+        "fotoUrl": "assets/img/gaseosas/cocacola.png"
       },
       {
         "id": "14",
-        "nombre":"Agua Saborizada Naranja",
+        "nombre":"Cerveza",
         "precio": 100,
         "esVegano":true,
-        "esCeliaco":true,
+        "esCeliaco":false,
         "ingredientes": [],
-        "fotoUrl": "https://statics.dinoonline.com.ar/imagenes/full_600x600_ma/3040783_f.jpg"
+        "fotoUrl": "assets/img/gaseosas/cerveza.png"
       },
       {
         "id": "15",
-        "nombre":"Fanta Uva",
+        "nombre":"Pepsi",
         "precio": 100,
         "esVegano":true,
         "esCeliaco":true,
         "ingredientes": [],
-        "fotoUrl": "https://carrefourar.vtexassets.com/arquivos/ids/332920/7790895648670_E02.jpg?v=638212197029330000"
+        "fotoUrl": "assets/img/gaseosas/pepsi.png"
       }
     ]
   },
   {
     "id": 5,
-    "nombre": "Combos",
+    "nombre": "Promos",
     "fotoUrl": "https://i-ticketing.iwos.com/1000x1000-th/products/220/products_220_2.png",
     "productos": [
       {
         "id": "16",
-        "nombre":"Pizza party (4 pizzas)",
+        "nombre":"Hamburguesas x 4",
         "precio": 100,
         "esVegano":false,
         "esCeliaco":false,
-        "ingredientes": [],
-        "fotoUrl": "https://thepostsportsbar.com/wp-content/uploads/2019/07/ALL-Pizzas-0045-top-down.jpg"
+        "ingredientes": ["4 hamburguesas dobles"],
+        "fotoUrl": "assets/img/promos/cuatro_hamburgesas.png"
+      },
+      {
+        "id": "17",
+        "nombre":"Doble Lomo",
+        "precio": 100,
+        "esVegano":false,
+        "esCeliaco":false,
+        "ingredientes": ["2 lomos completos","papas fritas"],
+        "fotoUrl": "assets/img/promos/doble_lomo.png"
+      },
+      {
+        "id": "18",
+        "nombre":"Pizza + Cerveza",
+        "precio": 100,
+        "esVegano":false,
+        "esCeliaco":false,
+        "ingredientes": ["2 Pizzas Simples","2 Cervezas"],
+        "fotoUrl": "assets/img/promos/pizza_birras.png"
       }
     ]
   },
   {
     "id": 6,
-    "nombre": "Otros",
+    "nombre": "Ensaladas",
     "fotoUrl": "https://eldiariony.com/wp-content/uploads/sites/2/2023/06/shutterstock_521741356.jpg?resize=360,270&quality=80",
     "productos": [
       {
-        "id": "17",
-        "nombre":"Papas fritas",
+        "id": "19",
+        "nombre":"Ensalada Común",
         "precio": 100,
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": [],
-        "fotoUrl": "https://cocina-casera.com/wp-content/uploads/2023/01/patatas-fritas-crujientes-francesa-1.jpg"
+        "fotoUrl": "assets/img/ensaladas/ensalada_comun.png"
       },
       {
-        "id": "18",
-        "nombre":"Ensalada César",
+        "id": "20",
+        "nombre":"Ensalada Rúcula",
         "precio": 100,
         "esVegano":false,
         "esCeliaco":false,
         "ingredientes": ["Lechuga","Salsa César","Pollo","Croutones"],
-        "fotoUrl": "https://www.cocinacaserayfacil.net/wp-content/uploads/2018/06/Ensalada-cesar.jpg"
+        "fotoUrl": "assets/img/ensaladas/ensalada_rucula.png"
       },
       {
-        "id": "19",
-        "nombre":"Ensalada simple",
+        "id": "21",
+        "nombre":"Ensalada Rusa",
         "precio": 100,
         "esVegano":true,
         "esCeliaco":true,
         "ingredientes": ["Lechuga","Tomate","Zanahoria"],
-        "fotoUrl": "https://www.plantheoshops.com.ar/mitienda/galeria/files/5/61b36abcb06eb_1639148220-7227.jpeg"
+        "fotoUrl": "assets/img/ensaladas/ensalada_rusa.png"
       }
     ]
   }
