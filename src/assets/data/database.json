@@ -139,7 +139,7 @@
         "precio": 100,
         "esVegano":true,
         "esCeliaco":true,
-        "ingredientes": [],
+        "ingredientes": ["500ml"],
         "fotoUrl": "assets/img/gaseosas/cocacola.png"
       },
       {
@@ -148,7 +148,7 @@
         "precio": 100,
         "esVegano":true,
         "esCeliaco":false,
-        "ingredientes": [],
+        "ingredientes": ["473ml"],
         "fotoUrl": "assets/img/gaseosas/cerveza.png"
       },
       {
@@ -157,7 +157,7 @@
         "precio": 100,
         "esVegano":true,
         "esCeliaco":true,
-        "ingredientes": [],
+        "ingredientes": ["500ml"],
         "fotoUrl": "assets/img/gaseosas/pepsi.png"
       }
     ]
