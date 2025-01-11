@@ -94,40 +94,7 @@
       }
     ]
   },
-  {
-    "id": 3,
-    "nombre": "Postres",
-    "fotoUrl": "https://www.recetasnestle.com.ar/sites/default/files/2023-03/postre-en-vaso-dulce-leche.jpg.jpg",
-    "productos": [
-      {
-        "id": "10",
-        "nombre":"Tiramisú",
-        "precio": 800,
-        "esVegano":false,
-        "esCeliaco":true,
-        "ingredientes": [],
-        "fotoUrl": "https://i.blogs.es/410470/vasitos/1366_2000.jpeg"
-      },
-      {
-        "id": "11",
-        "nombre":"Chocotorta",
-        "precio": 800,
-        "esVegano":false,
-        "esCeliaco":false,
-        "ingredientes": [],
-        "fotoUrl": "https://www.cronica.com.ar/__export/1653520801548/sites/cronica/img/2021/06/17/chocotorta_2_crop1623944104124.jpg_792575817.jpg"
-      },
-      {
-        "id": "12",
-        "nombre":"Turrón de Quaker",
-        "precio": 800,
-        "esVegano":false,
-        "esCeliaco":false,
-        "ingredientes": [],
-        "fotoUrl": "https://assets.elgourmet.com/wp-content/uploads/2023/03/cover_ipk5fgqbdh_eg-pf-platos-turron-de-avena-hi-03.jpg"
-      }
-    ]
-  },
+
   {
     "id": 4,
     "nombre": "Bebidas",
