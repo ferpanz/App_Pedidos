@@ -2,10 +2,10 @@
 
 header{
   position: relative;
-  height: 130px;
-  background-image: url("./../../../../assets/img/principal/fondoHeader.png");
+  height: 100px;
   background-position: center;
   background-size: cover;
+  background-color: variables.$color-principal;
   border-radius: 0 0 variables.$border-radius-grande variables.$border-radius-grande;
   display: flex;
   align-items: center;
@@ -41,7 +41,7 @@ h1{
 
 .logo__img{
   text-align: center;
-  height: 130px;
+  height: 100px;
   width: auto;
 }
 
