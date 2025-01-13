@@ -65,14 +65,16 @@ export class CarritoComponent {
   }
 
   async enviarMensaje(){
-    let pedido = ""
+    let pedido = "";
     for (let i = 0; i < this.cartService.carrito.length; i++) {
-      const producto = await this.productosService.getById(this.cartService.carrito[i].idProducto);
-      pedido += `* ${this.cartService.carrito[i].cantidad} x ${producto?.nombre}
+        const producto = await this.productosService.getById(this.cartService.carrito[i].idProducto);
+        const notas = this.cartService.carrito[i].notas ? ` (Notas: ${this.cartService.carrito[i].notas})` : "";
+        pedido += `*${this.cartService.carrito[i].cantidad} x ${producto?.nombre}* ${notas}\n
 `
     }
     const mensaje = `
-Hola! Soy *${this.perfilService.perfil()?.nombre}*, y te quiero hacer el siguiente pedido:
+¡Hola!
+Soy *${this.perfilService.perfil()?.nombre}*, y te quiero hacer el siguiente pedido:
 
 ${pedido}
 
