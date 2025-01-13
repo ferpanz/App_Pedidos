@@ -68,15 +68,23 @@ export class CarritoComponent {
     let pedido = ""
     for (let i = 0; i < this.cartService.carrito.length; i++) {
       const producto = await this.productosService.getById(this.cartService.carrito[i].idProducto);
-      pedido += `* ${this.cartService.carrito[i].cantidad} X ${producto?.nombre}
+      pedido += `* ${this.cartService.carrito[i].cantidad} x ${producto?.nombre}
 `
     }
     const mensaje = `
-Hola! Soy ${this.perfilService.perfil()?.nombre}, y te quiero hacer el siguiente pedido:
+Hola! Soy *${this.perfilService.perfil()?.nombre}*, y te quiero hacer el siguiente pedido:
+
 ${pedido}
+
 Si te querés comunicar conmigo hacelo al Nº del que te hablo o al ${this.perfilService.perfil()?.telefono}.
-La dirección de envío es: ${this.perfilService.perfil()?.direccion} - ${this.perfilService.perfil()?.detalleEntrega}.
-Muchas gracias
+
+La dirección de envío es:
+*${this.perfilService.perfil()?.direccion}* - ${this.perfilService.perfil()?.detalleEntrega}.
+
+El monto total a abonar es:
+*$${this.total}*
+
+Muchas gracias!
 `
     const link = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURI(mensaje)}`
     window.open(link,"_blank");
