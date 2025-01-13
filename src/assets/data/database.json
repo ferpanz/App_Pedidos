@@ -64,34 +64,8 @@
         "esCeliaco":false,
         "ingredientes": ["Medallón a base de lentejas","Pan Brioche","Tomate"],
         "fotoUrl": "assets/img/hamburguesas/hamburgesa_simple.png"
-      },
-      {
-        "id": "4",
-        "nombre":"Hamburguesa celíaca",
-        "precio": 1250,
-        "esVegano":false,
-        "esCeliaco":true,
-        "ingredientes": ["Carne de ternera","Pan libre de tacc","Queso"],
-        "fotoUrl": "assets/img/hamburguesas/hamburgesa_doble.png"
-      },
-      {
-        "id": "5",
-        "nombre":"Hamburguesa americana",
-        "precio": 3500,
-        "esVegano":false,
-        "esCeliaco":false,
-        "ingredientes": ["Carne de ternera","Pan Brioche","Queso","Salsa secreta BBQ", "Panceta"],
-        "fotoUrl": "assets/img/hamburguesas/hamburgesa_bacon.png"
-      },
-      {
-        "id": "6",
-        "nombre":"Medallón platero",
-        "precio": 2000,
-        "esVegano":true,
-        "esCeliaco":true,
-        "ingredientes": ["Medallón a base de lentejas","Tomate","Lechuga"],
-        "fotoUrl": "assets/img/hamburguesas/hamburgesa_simple.png"
       }
+
     ]
   },
 
