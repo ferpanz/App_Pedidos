@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Pizzas",
-    "fotoUrl": "assets/img/pizzas/pizzaalapiedra.png",
+    "fotoUrl": "assets/img/principal/pizza.jpeg",
     "productos": [
       {
         "id": "7",
@@ -36,7 +36,7 @@
   {
     "id": 2,
     "nombre": "Hamburguesas",
-    "fotoUrl": "https://img.freepik.com/vector-gratis/hamburguesa-realista-sobre-fondo-pizarra_79603-1042.jpg?w=2000",
+    "fotoUrl": "assets/img/principal/hamburguesa.jpeg",
     "productos": [
       {
         "id": "1",
@@ -98,7 +98,7 @@
   {
     "id": 4,
     "nombre": "Bebidas",
-    "fotoUrl": "https://img.band.uol.com.br/image/2023/02/09/bebidas-alcoolicas-181014_800x450.webp",
+    "fotoUrl": "assets/img/principal/gaseosa.jpeg",
     "productos": [
       {
         "id": "13",
@@ -132,7 +132,7 @@
   {
     "id": 5,
     "nombre": "Promos",
-    "fotoUrl": "https://i-ticketing.iwos.com/1000x1000-th/products/220/products_220_2.png",
+    "fotoUrl": "assets/img/principal/promo.jpeg",
     "productos": [
       {
         "id": "16",
@@ -166,7 +166,7 @@
   {
     "id": 6,
     "nombre": "Ensaladas",
-    "fotoUrl": "https://eldiariony.com/wp-content/uploads/sites/2/2023/06/shutterstock_521741356.jpg?resize=360,270&quality=80",
+    "fotoUrl": "assets/img/principal/ensalada.jpeg",
     "productos": [
       {
         "id": "19",
