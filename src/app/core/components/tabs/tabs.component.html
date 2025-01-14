@@ -2,11 +2,15 @@
 <nav>
 <ul id="container">
   <li class="tab" [routerLink]="['/']" routerLinkActive="seleccionado" [routerLinkActiveOptions]= "{exact: true}">
-    <svg fill="#00000000" attr.stroke="{{router.isActive('/',true) ? colorActivado : colorDesactivado}}" stroke-width="6px" width="50px" height="50px" viewBox="-3 -10 122.88 145.88" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 122.88 115.21" xml:space="preserve">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-      <g id="SVGRepo_iconCarrier"> <g> <path d="M29.03,100.46l20.79-25.21l9.51,12.13L41,110.69C33.98,119.61,20.99,110.21,29.03,100.46L29.03,100.46z M53.31,43.05 c1.98-6.46,1.07-11.98-6.37-20.18L28.76,1c-2.58-3.03-8.66,1.42-6.12,5.09L37.18,24c2.75,3.34-2.36,7.76-5.2,4.32L16.94,9.8 c-2.8-3.21-8.59,1.03-5.66,4.7c4.24,5.1,10.8,13.43,15.04,18.53c2.94,2.99-1.53,7.42-4.43,3.69L6.96,18.32 c-2.19-2.38-5.77-0.9-6.72,1.88c-1.02,2.97,1.49,5.14,3.2,7.34L20.1,49.06c5.17,5.99,10.95,9.54,17.67,7.53 c1.03-0.31,2.29-0.94,3.64-1.77l44.76,57.78c2.41,3.11,7.06,3.44,10.08,0.93l0.69-0.57c3.4-2.83,3.95-8,1.04-11.34L50.58,47.16 C51.96,45.62,52.97,44.16,53.31,43.05L53.31,43.05z M65.98,55.65l7.37-8.94C63.87,23.21,99-8.11,116.03,6.29 C136.72,23.8,105.97,66,84.36,55.57l-8.73,11.09L65.98,55.65L65.98,55.65z"/> </g> </g>
-    </svg>
+    <svg width="50px" height="50px" attr.fill="{{router.isActive('/',true) ? colorActivado : colorDesactivado}}" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+      <path d="M379.057,10.209H107.407c-18.063,0-32.754,14.69-32.754,32.746l0.233,392.514c0,7.658,5.326,14.307,12.809,15.957
+        l226.071,50.079c4.837,1.073,9.9-0.112,13.77-3.204c3.86-3.107,6.111-7.802,6.111-12.752v-38.193h45.41
+        c18.063,0,32.754-14.691,32.754-32.746V42.955C411.811,24.899,397.12,10.209,379.057,10.209z M278.646,246.768l-154.063-38.837
+        c-4.708-1.187-8.006-5.42-8.006-10.275v-50.962c0-6.902,6.494-11.962,13.187-10.275l154.063,38.837
+        c4.708,1.187,8.006,5.421,8.006,10.275v50.962C291.832,243.395,285.338,248.455,278.646,246.768z M333.646,414.558V92.906
+        c0-7.77-5.463-14.466-13.071-16.021L154.93,43.007l224.071-0.052l0.017,371.591L333.646,414.558z M379.057,414.546h0.017"/>
+      </svg>
+
   </li>
   <li class="tab" [routerLink]="['/buscar']" routerLinkActive="seleccionado">
     <svg attr.fill="{{router.isActive('/buscar',true) ? colorActivado : colorDesactivado}}" width="50px" height="50px" viewBox="0 -10 512 560" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -16,19 +20,14 @@
     </svg>
   </li>
   <li class="tab" [routerLink]="['/carrito']" routerLinkActive="seleccionado">
-    <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-      <g id="SVGRepo_iconCarrier"> <path d="M3.86376 16.4552C3.00581 13.0234 2.57684 11.3075 3.47767 10.1538C4.3785 9 6.14721 9 9.68462 9H14.3153C17.8527 9 19.6214 9 20.5222 10.1538C21.4231 11.3075 20.9941 13.0234 20.1362 16.4552C19.5905 18.6379 19.3176 19.7292 18.5039 20.3646C17.6901 21 16.5652 21 14.3153 21H9.68462C7.43476 21 6.30983 21 5.49605 20.3646C4.68227 19.7292 4.40943 18.6379 3.86376 16.4552Z" attr.stroke="{{router.isActive('/carrito',true) ? colorActivado : colorDesactivado}}" stroke-width="1"/> <path d="M19.5 9.5L18.7896 6.89465C18.5157 5.89005 18.3787 5.38775 18.0978 5.00946C17.818 4.63273 17.4378 4.34234 17.0008 4.17152C16.5619 4 16.0413 4 15 4M4.5 9.5L5.2104 6.89465C5.48432 5.89005 5.62128 5.38775 5.90221 5.00946C6.18199 4.63273 6.56216 4.34234 6.99922 4.17152C7.43808 4 7.95872 4 9 4" attr.stroke="{{router.isActive('/carrito',true) ? colorActivado : colorDesactivado}}" stroke-width="1"/> <path d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4C15 4.55228 14.5523 5 14 5H10C9.44772 5 9 4.55228 9 4Z" attr.stroke="{{router.isActive('/carrito',true) ? colorActivado : colorDesactivado}}" stroke-width="1"/> <path d="M8 13V17" attr.stroke="{{router.isActive('/carrito',true) ? colorActivado : colorDesactivado}}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/> <path d="M16 13V17" attr.stroke="{{router.isActive('/carrito',true) ? colorActivado : colorDesactivado}}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/> <path d="M12 13V17" attr.stroke="{{router.isActive('/carrito',true) ? colorActivado : colorDesactivado}}" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/> </g>
+    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" attr.fill="{{router.isActive('/carrito',true) ? colorActivado : colorDesactivado}}" class="bi bi-cart4" viewBox="0 0 16 16">
+      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
     </svg>
   </li>
 
   <li class="tab" [routerLink]="['/perfil']" routerLinkActive="seleccionado">
-    <svg width="50px" height="50px" viewBox="1 8 21 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g>
-        <rect width="24" height="24" fill="none"/>
-        <path d="M14.3365 12.3466L14.0765 11.9195C13.9082 12.022 13.8158 12.2137 13.8405 12.4092C13.8651 12.6046 14.0022 12.7674 14.1907 12.8249L14.3365 12.3466ZM9.6634 12.3466L9.80923 12.8249C9.99769 12.7674 10.1348 12.6046 10.1595 12.4092C10.1841 12.2137 10.0917 12.022 9.92339 11.9195L9.6634 12.3466ZM4.06161 19.002L3.56544 18.9402L4.06161 19.002ZM19.9383 19.002L20.4345 18.9402L19.9383 19.002ZM16 8.5C16 9.94799 15.2309 11.2168 14.0765 11.9195L14.5965 12.7737C16.0365 11.8971 17 10.3113 17 8.5H16ZM12 4.5C14.2091 4.5 16 6.29086 16 8.5H17C17 5.73858 14.7614 3.5 12 3.5V4.5ZM7.99996 8.5C7.99996 6.29086 9.79082 4.5 12 4.5V3.5C9.23854 3.5 6.99996 5.73858 6.99996 8.5H7.99996ZM9.92339 11.9195C8.76904 11.2168 7.99996 9.948 7.99996 8.5H6.99996C6.99996 10.3113 7.96342 11.8971 9.40342 12.7737L9.92339 11.9195ZM9.51758 11.8683C6.36083 12.8309 3.98356 15.5804 3.56544 18.9402L4.55778 19.0637C4.92638 16.1018 7.02381 13.6742 9.80923 12.8249L9.51758 11.8683ZM3.56544 18.9402C3.45493 19.8282 4.19055 20.5 4.99996 20.5V19.5C4.70481 19.5 4.53188 19.2719 4.55778 19.0637L3.56544 18.9402ZM4.99996 20.5H19V19.5H4.99996V20.5ZM19 20.5C19.8094 20.5 20.545 19.8282 20.4345 18.9402L19.4421 19.0637C19.468 19.2719 19.2951 19.5 19 19.5V20.5ZM20.4345 18.9402C20.0164 15.5804 17.6391 12.8309 14.4823 11.8683L14.1907 12.8249C16.9761 13.6742 19.0735 16.1018 19.4421 19.0637L20.4345 18.9402Z" attr.fill="{{router.isActive('/perfil',true) ? colorActivado : colorDesactivado}}"/>
-      </g>
+    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" attr.fill="{{router.isActive('/perfil',true) ? colorActivado : colorDesactivado}}" class="bi bi-person" viewBox="0 0 16 16">
+      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
     </svg>
   </li>
 </ul>
