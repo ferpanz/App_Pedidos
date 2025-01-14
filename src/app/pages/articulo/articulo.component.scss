@@ -56,9 +56,12 @@ textarea{
 
 button{
   width: 100%;
+  height: 60px;
+  font-size: x-large;
+  font-weight: bold;
   border-radius: variables.$border-radius-chico;
   border: unset;
-  background-color: variables.$color-principal-claro;
+  background-color: variables.$color-principal;
   font-size: larger;
   padding: 10px;
 }

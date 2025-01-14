@@ -19,6 +19,6 @@
     <input type="text" name="telefono" id="telefono" [(ngModel)]="perfil.telefono" #telefono="ngModel" required minlength="5">
     <p class="error" *ngIf="telefono.invalid && telefono.touched">Ingrese un teléfono válido</p>
   </div>
-  <button [disabled]="formulario.invalid">Guardar</button>
+  <button [disabled]="formulario.invalid">GUARDAR INFORMACIÓN</button>
 </form>
 </section>

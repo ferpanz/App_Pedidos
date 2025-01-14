@@ -31,11 +31,14 @@ input{
   }
 }
 
-
+.boton{
+  align-items: center;
+}
 button{
-  height: 40px;
+  height: 60px;
+  font-size: x-large;
   font-weight: bold;
-  background-color: variables.$color-principal-claro;
+  background-color: variables.$color-principal;
   border: none;
   border-radius: variables.$border-radius-chico;
   cursor: pointer;

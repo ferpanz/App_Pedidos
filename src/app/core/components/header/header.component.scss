@@ -16,7 +16,7 @@ header{
 header::before{
   position: absolute;
   content: "";
-  background-image: url("./../../../../assets/img/principal/fondoHeader.png");
+  background-color: variables.$color-principal; /*background-image: url();*/
   background-position: center;
   background-size: cover;
   top: 0;
@@ -30,7 +30,7 @@ header::before{
 }
 
 header.extendido::before{
-  opacity: 0.5;
+  opacity: 1;
 }
 
 h1{

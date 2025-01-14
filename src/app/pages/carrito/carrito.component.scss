@@ -29,7 +29,7 @@ h2{
 
 #izq{
   width: 35%;
-  background-color: bisque;
+  /*background-color: bisque;*/
   background-size: cover;
   background-position: center;
   border-radius: variables.$border-radius-chico;
@@ -66,7 +66,7 @@ h2{
   font-size: xx-large;
   text-decoration: none;
   color: black;
-  background-color: variables.$color-principal-claro;
+  background-color: variables.$color-principal;
   padding: 15px 30px;
   border-radius: variables.$border-radius-chico;
 }

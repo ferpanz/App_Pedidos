@@ -19,7 +19,7 @@ export class PerfilComponent {
   perfilService = inject(PerfilService);
 
   ngOnInit(): void {
-    this.headerService.titulo.set("Perfil");
+    this.headerService.titulo.set("Info");
     if(this.perfilService.perfil()){
       this.perfil = {...this.perfilService.perfil()!}
     }
