@@ -37,6 +37,7 @@
 }
 
 h4{
+  font-size: large;
   font-weight: bold;
   margin-bottom: 5px;
 
@@ -52,6 +53,18 @@ ul li {
 }
 
 #precio{
-  text-align: end;
-  font-weight: bold;
+  text-align: start;
+  font-size: large;
+  margin-top: 5px;
+}
+
+.flecha{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  img{
+    width: 30px;
+    height: 30px;
+  }
 }
