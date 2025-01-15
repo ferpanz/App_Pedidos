@@ -40,7 +40,7 @@ textarea{
   border: unset;
   background-color: variables.$color-principal-claro;
   margin-top: 10px;
-  resize:vertical;
+  resize:none;
   width: calc(100% - 30px);
   padding: 15px;
   &:focus{
@@ -64,4 +64,8 @@ button{
   background-color: variables.$color-principal;
   font-size: larger;
   padding: 10px;
+}
+
+.negrita{
+  font-weight: bold;
 }

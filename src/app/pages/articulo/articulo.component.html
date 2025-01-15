@@ -1,7 +1,7 @@
 <img id="fotoProducto" src="{{producto?.fotoUrl}}" alt="{{producto?.nombre}}">
 <section class="margen-chico">
   <ul>
-    <span>Ingredientes: </span>
+    <span class="negrita">Ingredientes: </span>
     <li *ngFor="let ingrediente of producto?.ingredientes">{{ingrediente}}</li>
   </ul>
   <div>
@@ -14,10 +14,10 @@
       <p>Apto vegano</p>
     </div>
   </div>
-  <label for="notas">Notas:</label>
-  <textarea name="notas" id="notas" cols="30" rows="10" [(ngModel)]="notas"></textarea>
+  <label for="notas" class="negrita">Notas:</label>
+  <textarea name="notas" id="notas" cols="30" rows="6" [(ngModel)]="notas"></textarea>
   <div id="cantidad-container">
-    <label for="cantidad">Cantidad:</label>
+    <label for="cantidad" class="negrita">Cantidad:</label>
     <app-contador-cantidad (cantidadCambiada)="cantidad.set($event)"></app-contador-cantidad>
   </div>
   <button (click)="agregarAlCarrito()">AGREGAR AL CARRITO</button>
