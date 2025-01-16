@@ -27,9 +27,24 @@
     <a id="mas" [routerLink]="['/']" routerLinkActive="router-link-active" >+</a>
   </div>
 </section>
+<section class="opciones">
+  <h3>Opciones de entrega</h3>
+  <div class="flex-apart">
+    <label>
+      <input type="radio" name="tipoEntrega" value="local" (change)="actualizarTipoEntrega('local')" [checked]="tipoEntrega === 'local'">
+      Retirar en el local
+    </label>
+    <label>
+      <input type="radio" name="tipoEntrega" value="domicilio" (change)="actualizarTipoEntrega('domicilio')" [checked]="tipoEntrega === 'domicilio'">
+      Enviar a domicilio
+    </label>
+  </div>
+</section>
+
 <section class="margen-chico" id="informacion">
-  <h3>Dirección de envío</h3>
-  <div class="flex-apart" id="envios-container">
+  <h3 *ngIf="tipoEntrega === 'domicilio'">Dirección de envío</h3>
+  <h3 *ngIf="tipoEntrega === 'local'">Pedido para retirar en el local</h3>
+  <div class="flex-apart" id="envios-container" *ngIf="tipoEntrega === 'domicilio'">
     <div>
       <ng-container *ngIf="perfilService.perfil(), else sinDatosEnvio">
         <h4>{{perfilService.perfil()!.nombre}}</h4>
@@ -41,7 +56,7 @@
       </ng-template>
     </div>
     <div>
-      <a [routerLink]="['/perfil']" routerLinkActive="router-link-active" >
+      <a [routerLink]="['/perfil']" routerLinkActive="router-link-active">
         <img id="boton-editar-direccion" src="./../../../assets/icons/lapiz.png" alt="Editar">
       </a>
     </div>
@@ -49,16 +64,18 @@
   <div id="totales" class="flex-apart">
     <div>
       <p class="negrita">Subtotal</p>
-      <p>Delivery</p>
+      <p *ngIf="tipoEntrega === 'domicilio'">Delivery</p>
       <p class="negrita">Total</p>
     </div>
     <div id="montos">
       <p class="negrita">${{subtotal}}</p>
-      <p>${{this.configService.configuracion().costoEnvio}}</p>
+      <p *ngIf="tipoEntrega === 'domicilio'">${{this.configService.configuracion().costoEnvio}}</p>
       <p class="negrita">${{total}}</p>
     </div>
   </div>
-  <button id="enviar" [disabled]="!perfilService.perfil()" (click)="enviarMensaje()">REALIZAR PEDIDO</button>
+  <button id="enviar" [disabled]="!perfilService.perfil() && tipoEntrega === 'domicilio'" (click)="enviarMensaje()">
+    REALIZAR PEDIDO
+  </button>
 </section>
 </ng-container>
 <ng-template #sinCarrito>

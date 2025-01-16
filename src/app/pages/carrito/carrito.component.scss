@@ -112,6 +112,25 @@ h2{
 #boton-editar-direccion{
   padding-right: 5px;
 }
+.opciones {
+  margin: 20px 25px;
+  h3 {
+    margin: 15px 0px;
+    font-size: large;
+  }
+  .flex-apart {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+
+    label {
+      cursor: pointer;
+      input {
+        margin-right: 5px;
+      }
+    }
+  }
+}
 
 dialog{
   background-color: variables.$color-principal-claro;

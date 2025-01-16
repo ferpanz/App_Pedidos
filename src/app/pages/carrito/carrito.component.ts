@@ -72,22 +72,33 @@ export class CarritoComponent {
         pedido += `*${this.cartService.carrito[i].cantidad} x ${producto?.nombre}* ${notas}\n
 `
     }
-    const mensaje = `
+    let mensaje = `
 ¡Hola!
 Soy *${this.perfilService.perfil()?.nombre}*, y te quiero hacer el siguiente pedido:
 
 ${pedido}
 
-Si te querés comunicar conmigo hacelo al Nº del que te hablo o al ${this.perfilService.perfil()?.telefono}.
-
-La dirección de envío es:
-*${this.perfilService.perfil()?.direccion}* - ${this.perfilService.perfil()?.detalleEntrega}.
-
 El monto total a abonar es:
+
 *$${this.total}*
 
-Muchas gracias!
-`
+`;
+
+  if (this.tipoEntrega === 'domicilio') {
+    mensaje += `
+La dirección de envío es:
+
+*${this.perfilService.perfil()?.direccion}* - ${this.perfilService.perfil()?.detalleEntrega}.
+`;
+  } else {
+    mensaje += `*Este pedido será retirado en el local.*
+
+    `;
+  }
+
+  mensaje += `\n*¡Muchas gracias!*`;
+
+
     const link = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURI(mensaje)}`
     window.open(link,"_blank");
     this.dialog.nativeElement.showModal()
@@ -103,5 +114,15 @@ Muchas gracias!
     this.dialog.nativeElement.close();
   }
 
+  tipoEntrega: 'local' | 'domicilio' = 'local'; // Valor inicial predeterminado
+
+  actualizarTipoEntrega(tipo: 'local' | 'domicilio') {
+    this.tipoEntrega = tipo;
+    if (tipo === 'local') {
+      this.total = this.subtotal; // Elimina el costo de envío si se retira en el local
+    } else {
+      this.total = this.subtotal + this.configService.configuracion().costoEnvio;
+    }
+  }
 }
 
