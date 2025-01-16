@@ -1,4 +1,5 @@
 <header [ngClass]="{extendido: headerService.extendido()}" class="fondo-imagen">
+  <a [routerLink]="['/']"><img class="back" src="./../../../../assets/icons/arrow-left-circle.svg" alt="back"></a>
   <h1 class="{{claseAplicada()}}" (animationend)="mostrarTituloNuevo($event)">{{tituloMostrado()}}</h1>
   <img class="logo__img" src="./../../../../assets/img/principal/logo.png" alt="logo">
 </header>

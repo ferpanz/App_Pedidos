@@ -9,7 +9,7 @@ header{
   border-radius: 0 0 variables.$border-radius-grande variables.$border-radius-grande;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   transition: 500ms ease-in-out;
 }
 
@@ -37,6 +37,19 @@ h1{
   font-size: xx-large;
   font-weight: 800;
   text-align: center;
+}
+
+header.extendido h1 {
+  display: none;
+}
+
+.back{
+  width: 40px;
+  height: 40px;
+}
+
+header.extendido .back {
+  display: none;
 }
 
 .logo__img{
