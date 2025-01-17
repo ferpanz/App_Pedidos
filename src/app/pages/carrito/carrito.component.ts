@@ -119,10 +119,10 @@ La dirección de envío es:
   actualizarTipoEntrega(tipo: 'local' | 'domicilio') {
     this.tipoEntrega = tipo;
     if (tipo === 'local') {
-      this.total = this.subtotal; // Elimina el costo de envío si se retira en el local
+        this.total = this.subtotal; // Elimina el costo de envío
     } else {
-      this.total = this.subtotal + this.configService.configuracion().costoEnvio;
+        this.total = this.subtotal + this.configService.configuracion().costoEnvio; // Agrega el costo de envío
     }
-  }
+}
 }
 
