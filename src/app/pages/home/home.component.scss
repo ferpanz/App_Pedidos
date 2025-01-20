@@ -1,3 +1,5 @@
+@use "./../../../assets/styles/variables.scss";
+
 #categorias-container{
   margin: 20px 20px;
   display: grid;
@@ -8,4 +10,21 @@
 
 app-tarjeta-categoria{
   width: 100%;
+}
+
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 10px;
+
+}
+
+
+.btn{
+  font-size: large;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: variables.$border-radius-mediano;
+  background-color: variables.$color-principal;
 }
