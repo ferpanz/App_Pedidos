@@ -50,20 +50,3 @@ button{
 .error{
   color: red;
 }
-
-.app{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-
-}
-
-
-.btn{
-  font-size: large;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: variables.$border-radius-mediano;
-  background-color: variables.$color-principal-claro;
-}
