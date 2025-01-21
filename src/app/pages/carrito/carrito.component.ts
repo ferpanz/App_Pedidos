@@ -96,7 +96,11 @@ La dirección de envío es:
     `;
   }
 
-  mensaje += `\n*¡Muchas gracias!*`;
+  mensaje += `\n*¡Muchas gracias!*
+
+
+  *ESTE ES UN MENSAJE MODELO*
+  En breve nos contactaremos para que puedas conocer más de este servicio.`;
 
 
     const link = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURI(mensaje)}`
