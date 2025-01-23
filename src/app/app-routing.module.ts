@@ -6,6 +6,7 @@ import { ArticuloComponent } from './pages/articulo/articulo.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { ConfigurarComponent } from './pages/configurar/configurar.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: "buscar",
     component: BuscarComponent
+  },
+  {
+    path: "configurar",
+    component: ConfigurarComponent
   }
 ];
 

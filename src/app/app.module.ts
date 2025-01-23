@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { TabsComponent } from './core/components/tabs/tabs.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { ContadorCantidadComponent } from './core/components/contador-cantidad/contador-cantidad.component';
+import { ConfigurarComponent } from './pages/configurar/configurar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TabsComponent,
     HeaderComponent,
+    ConfigurarComponent,
   ],
   imports: [
     BrowserModule,

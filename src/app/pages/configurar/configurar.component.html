@@ -1,0 +1,25 @@
+<div class="titulo">
+  <h1>Modificar Precios de Productos</h1>
+</div>
+<div>
+  <div>
+    <div *ngFor="let producto of productos" class="fondo">
+      <div class="info">
+        <div class="foto">
+          <img [src]="producto.fotoUrl" alt="{{ producto.nombre }}" />
+        </div>
+        <div class="detalles">
+          <h4>{{ producto.nombre }}</h4>
+          <p id="precio">${{producto.precio}}</p>
+        </div>
+      </div>
+      <div class="new">
+        <p>Nuevo precio: <input type="number" /></p>
+        <button (click)="actualizarPrecio(producto)">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

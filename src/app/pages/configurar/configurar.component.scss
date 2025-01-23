@@ -1,0 +1,79 @@
+.titulo {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: x-large;
+  text-align: center;
+}
+
+.fondo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdbd7;
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.foto {
+  margin-right: 10px;
+}
+
+img {
+  width: 90px;
+  height: auto;
+}
+
+.detalles {
+  flex: 1;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+#precio {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.new {
+  margin-top: 10px;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  background-color: #ffc300;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
