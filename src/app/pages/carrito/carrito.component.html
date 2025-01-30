@@ -44,7 +44,7 @@
   <section class="margen-chico" id="informacion">
       <h3 *ngIf="tipoEntrega === 'domicilio'">Dirección de envío</h3>
       <h3 *ngIf="tipoEntrega === 'local'">Pedido para retirar en el local</h3>
-      <div class="flex-apart" id="envios-container" *ngIf="tipoEntrega === 'domicilio'">
+      <div class="flex-apart" id="envios-container">
           <div>
               <ng-container *ngIf="perfilService.perfil(); else sinDatosEnvio">
                   <h4>{{perfilService.perfil()!.nombre}}</h4>
@@ -52,7 +52,7 @@
                   <p>{{perfilService.perfil()!.detalleEntrega}}</p>
               </ng-container>
               <ng-template #sinDatosEnvio>
-                  <p>Ingresá tus datos de envío</p>
+                  <p>Ingresá tus datos</p>
               </ng-template>
           </div>
           <div>
@@ -73,7 +73,7 @@
               <p class="negrita">${{total}}</p>
           </div>
       </div>
-      <button id="enviar" [disabled]="!perfilService.perfil() && tipoEntrega === 'domicilio'" (click)="enviarMensaje()">
+      <button id="enviar" [disabled]="!perfilService.perfil()" (click)="enviarMensaje()">
           REALIZAR PEDIDO
       </button>
   </section>
